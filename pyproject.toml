@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-army"
+version = "0.2.0"
+description = "110 production-grade AI agents on one tiny, model-agnostic core. Zero dependencies."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Ethos6" }]
+requires-python = ">=3.11"
+dependencies = []
+keywords = ["ai", "agents", "llm", "rag", "claude", "openai", "gemini", "ollama"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+army = "army.cli:main"
+
+[tool.setuptools]
+packages = ["army"]
